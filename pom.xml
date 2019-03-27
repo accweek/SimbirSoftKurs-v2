@@ -13,6 +13,7 @@
 	<version>v1</version>
 	<name>Loginov-internship</name>
 	<description>Demo project for Spring Boot</description>
+	<packaging>jar</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -139,14 +140,14 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-checkstyle-plugin</artifactId>
-						<version> 3.0.0</version>
+						<version>3.0.0</version>
 						<executions>
 							<execution>
 								<id>validate</id>
 								<phase>validate</phase>
 								<configuration>
-									<configLocation>CS/checkstyle.xml</configLocation>
-									<suppressionsLocation>CS/suppressions.xml</suppressionsLocation>
+									<configLocation>codestyle/checkstyle.xml</configLocation>
+									<suppressionsLocation>codestyle/suppressions.xml</suppressionsLocation>
 									<includeTestSourceDirectory>true</includeTestSourceDirectory>
 									<encoding>UTF-8</encoding>
 									<consoleOutput>true</consoleOutput>
@@ -159,6 +160,7 @@
 						</executions>
 					</plugin>
 				</plugins>
+
 			</build>
 		</profile>
 	</profiles>
